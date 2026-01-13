@@ -121,7 +121,7 @@ function obj:init()
 		["n"] = { name = "Notion" },
 		["c"] = { name = "Google Chrome" },
 		["d"] = { name = "Discord" },
-        ["f"] = { name = "Finder" },
+        ["p"] = { name = "Finder" },
         ["t"] = { name = "Terminal" },
         ["v"] = { bundleID = VSCODE_BUNDLE },
 		-- ["'"] = { -- Toggle between Dofus and Ankama Launcher
