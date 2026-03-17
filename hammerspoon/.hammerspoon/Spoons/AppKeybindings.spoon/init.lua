@@ -115,14 +115,15 @@ function obj:init()
 	-- Hotkeys ---------------------------------------------------------------
 	-- Single-app quick launchers (your existing ones)
 	local singleHotkeys = {
-		["delete"] = { name = "Obsidian" },
 		["w"] = { name = "Whatsapp" },
 		["s"] = { name = "Spotify" },
-		["n"] = { name = "Notion" },
+        ["r"] = { name = "Strawberry" },
+		["n"] = { name = "Obsidian" },
 		["c"] = { name = "Google Chrome" },
-		["d"] = { name = "Discord" },
+		["d"] = { name = "Docker" },
         ["p"] = { name = "Finder" },
         ["t"] = { name = "Terminal" },
+        ["o"] = { name = "Mail" },
         ["v"] = { bundleID = VSCODE_BUNDLE },
 		-- ["'"] = { -- Toggle between Dofus and Ankama Launcher
 		-- 	action = function()
