@@ -10,16 +10,17 @@
     <string>/opt/homebrew/bin/agentmemory</string>
   </array>
 
+  <!-- HOME is deliberately not set: launchd already provides the correct
+       value for a per-user agent, and overriding it here is what broke
+       this service when the file was copied between machines. -->
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key>
     <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
-    <key>HOME</key>
-    <string>/Users/maxence</string>
   </dict>
 
   <key>WorkingDirectory</key>
-  <string>/Users/maxence/.agentmemory</string>
+  <string>/Users/hugopuybareau/.agentmemory</string>
 
   <key>RunAtLoad</key>
   <true/>
@@ -28,10 +29,10 @@
   <true/>
 
   <key>StandardOutPath</key>
-  <string>/Users/maxence/.agentmemory/daemon.log</string>
+  <string>/Users/hugopuybareau/.agentmemory/daemon.log</string>
 
   <key>StandardErrorPath</key>
-  <string>/Users/maxence/.agentmemory/daemon.log</string>
+  <string>/Users/hugopuybareau/.agentmemory/daemon.log</string>
 
   <key>ProcessType</key>
   <string>Background</string>

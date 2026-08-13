@@ -236,7 +236,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # pnpm
-export PNPM_HOME="/Users/maxence/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -253,7 +253,7 @@ fi
 alias nvim-test='NVIM_APPNAME=nvim-test nvim'
 
 # bun completions
-[ -s "/Users/maxence/.bun/_bun" ] && source "/Users/maxence/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
