@@ -4,12 +4,17 @@
 history.jsonl
 mcp-needs-auth-cache.json
 
+.last-update-result.json
+stats-cache.json
+
 # Session & conversation data
 sessions/
 session-env/
 projects/
+tasks/
 context-mode/sessions/
 context-mode/sessions.db*
+context-mode/content/
 shell-snapshots/
 file-history/
 paste-cache/
@@ -19,6 +24,13 @@ backups/
 cache/
 downloads/
 
-# Plugin runtime cache (not marketplace definitions)
+# Locally-built native bits
+chrome/
+
+# Plugin runtime — Claude Code fetches and rewrites all of this itself.
+# Tracking it made every checkout conflict on machine-generated churn.
 plugins/cache/
 plugins/data/
+plugins/marketplaces/
+plugins/plugin-catalog-cache.json
+plugins/.last_inuse_sweep
