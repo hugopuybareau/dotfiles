@@ -1,12 +1,11 @@
 {
-<<<<<<< Updated upstream
   "claude-plugins-official": {
     "source": {
       "source": "github",
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-05-30T14:37:01.147Z"
+    "lastUpdated": "2026-08-13T20:32:10.776Z"
   },
   "caveman": {
     "source": {
@@ -24,18 +23,12 @@
     "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/context-mode",
     "lastUpdated": "2026-05-30T14:04:20.925Z"
   },
-=======
->>>>>>> Stashed changes
   "agentmemory": {
     "source": {
       "source": "github",
       "repo": "rohitg00/agentmemory"
     },
     "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/agentmemory",
-<<<<<<< Updated upstream
     "lastUpdated": "2026-05-30T14:04:25.447Z"
-=======
-    "lastUpdated": "2026-05-30T23:54:51.218Z"
->>>>>>> Stashed changes
   }
 }

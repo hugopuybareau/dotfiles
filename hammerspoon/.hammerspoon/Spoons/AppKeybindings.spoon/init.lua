@@ -149,8 +149,8 @@ function obj:init()
 		["c"] = { name = "Google Chrome" },
 		["t"] = { bundleID = GHOSTTY_BUNDLE },
 		["v"] = { bundleID = VSCODE_BUNDLE },
-		["m"] = { name = "CapCut" },
-		["n"] = { bundleID = MAIL_BUNDLE },
+		["m"] = { bundleID = MAIL_BUNDLE },
+		["à"] = { name = "CapCut" },
 	}
 
 	-- Bind single-app hotkeys

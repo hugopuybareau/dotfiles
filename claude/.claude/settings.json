@@ -1,4 +1,5 @@
 {
+  "model": "opus",
   "hooks": {
     "Stop": [
       {
@@ -98,8 +99,10 @@
       }
     }
   },
-  "effortLevel": "medium",
+  "effortLevel": "xhigh",
   "theme": "dark",
   "preferredNotifChannel": "notifications_disabled",
-  "agentPushNotifEnabled": true
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "cleanupPeriodDays": 99999
 }

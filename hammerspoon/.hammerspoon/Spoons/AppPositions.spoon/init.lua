@@ -74,20 +74,6 @@ function obj:init()
     -- 2. DÉCLENCHEURS (WATCHERS)
     --------------------------------------------------------------------------------
 
-    -- A. Raccourci Manuel (Gardé de ton script original)
-    hs.hotkey.bind({ "ctrl", "cmd" }, "M", function()
-        local win = hs.window.focusedWindow()
-        if not win then return end
-
-        local nextScreen = win:screen():next()
-        win:moveToScreen(nextScreen)
-        win:maximize()
-
-        local appName = win:application():name()
-        saveWindowScreen(appName, nextScreen)
-        hs.alert.show("Écran sauvegardé pour " .. appName)
-    end)
-
     -- Make app fullscreen
     hs.hotkey.bind({"ctrl", "cmd"}, "F", function()
         local win = hs.window.focusedWindow()
