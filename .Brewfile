@@ -44,7 +44,11 @@ brew "minio/stable/minio"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Ambitious Vim-fork focused on extensibility and agility
+brew "eza"
+brew "micro"
 brew "neovim"
+brew "yazi"
+brew "zoxide"
 # Platform built on V8 to build network applications
 brew "node"
 # OCR a PDF and add a searchable text layer

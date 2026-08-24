@@ -4,9 +4,9 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
 
-export EDITOR=nano
-export GIT_EDITOR=nano
-export VISUAL=nano
+export EDITOR=micro
+export GIT_EDITOR=micro
+export VISUAL=micro
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -136,9 +136,6 @@ alias ptk='pytest -k'
 alias ptksu='pytest --inline-snapshot=create,fix,trim,update --snapshot-update -k'
 alias ptn='pytest -n 6'
 
-# ls
-alias ll="ls -al"
-
 # Business
 function dst() {
   YELLOW='\033[0;33m'
@@ -193,6 +190,15 @@ source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit && compinit  # after plugins definition
 
+# ls -> eza. MUST stay after oh-my-zsh, which sets its own ls/ll aliases.
+if command -v eza &> /dev/null; then
+  alias ls="eza"
+  alias ll="eza -la --git"
+  alias lt="eza --tree --level=2 --git-ignore"
+  alias ltt="eza --tree --level=3 --git-ignore"
+else
+  alias ll="ls -al"
+fi
 
 # _______ Anything else _______
 
@@ -221,6 +227,11 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 #fzf config
 if command -v fzf &> /dev/null; then
   source <(fzf --zsh)
+fi
+
+# zoxide: learns the dirs you cd into, `z <substring>` jumps, `zi` picks via fzf
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
 fi
 
 alias k=kubectl
