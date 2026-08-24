@@ -2,7 +2,7 @@
 
 STAY_ALERT_REPO ?= git@github.com:maxmaxou2/stay-alert.git
 STAY_ALERT_DIR  ?= $(HOME)/src/stay-alert
-STOW_PACKAGES   ?= clang-format claude conda hammerspoon karabiner nvim opencode pdb rich ssh tmux zsh
+STOW_PACKAGES   ?= clang-format claude conda hammerspoon karabiner micro nvim opencode pdb rich ssh tmux zsh
 
 help:
 	@echo "Targets:"

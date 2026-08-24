@@ -1,0 +1,12 @@
+{
+    "softwrap": true,
+    "wordwrap": true,
+    "scrollbar": true,
+    "savecursor": true,
+    "diffgutter": true,
+    "clipboard": "external",
+    "mkparents": true,
+    "ft:makefile": {
+        "tabstospaces": false
+    }
+}
