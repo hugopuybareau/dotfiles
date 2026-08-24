@@ -5,15 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-08-13T20:32:10.776Z"
-  },
-  "caveman": {
-    "source": {
-      "source": "github",
-      "repo": "JuliusBrussee/caveman"
-    },
-    "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/caveman",
-    "lastUpdated": "2026-05-30T14:04:17.550Z"
+    "lastUpdated": "2026-08-24T09:24:52.447Z"
   },
   "context-mode": {
     "source": {

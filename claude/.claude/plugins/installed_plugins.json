@@ -21,23 +21,13 @@
         "gitCommitSha": "c40770ae5a1d6855fce096c5b747e709ec946b2b"
       }
     ],
-    "caveman@caveman": [
-      {
-        "scope": "user",
-        "installPath": "/Users/hugopuybareau/.claude/plugins/cache/caveman/caveman/655b7d9c5431",
-        "version": "655b7d9c5431",
-        "installedAt": "2026-05-30T14:04:37.576Z",
-        "lastUpdated": "2026-05-30T14:04:37.576Z",
-        "gitCommitSha": "655b7d9c5431f822264b7732e9901c5578ac84cf"
-      }
-    ],
     "context-mode@context-mode": [
       {
         "scope": "user",
         "installPath": "/Users/hugopuybareau/dotfiles/claude/.claude/plugins/cache/context-mode/context-mode/1.0.151",
         "version": "1.0.151",
         "installedAt": "2026-05-30T14:04:37.576Z",
-        "lastUpdated": "2026-08-12T07:22:48.044Z",
+        "lastUpdated": "2026-08-24T07:58:49.591Z",
         "gitCommitSha": "824f0427bf67a5c121fb1bec00696ca9ab9058a6"
       }
     ],
@@ -57,7 +47,7 @@
         "installPath": "/Users/hugopuybareau/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
         "version": "unknown",
         "installedAt": "2026-05-31T12:53:37.141Z",
-        "lastUpdated": "2026-08-13T20:32:10.812Z"
+        "lastUpdated": "2026-08-24T09:24:52.530Z"
       }
     ],
     "lua-lsp@claude-plugins-official": [

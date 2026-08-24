@@ -1,7 +1,5 @@
 # Runtime state — never commit
 .last-cleanup
-.caveman-active
-.caveman-ab
 history.jsonl
 mcp-needs-auth-cache.json
 
@@ -19,6 +17,8 @@ context-mode/content/
 shell-snapshots/
 file-history/
 paste-cache/
+telemetry/
+image-cache/
 
 # Backups & cache
 backups/
