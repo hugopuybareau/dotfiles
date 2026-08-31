@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "stay-alert claude-code-hook on-stop"
+            "command": "jaynalerts claude-code-hook on-stop"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "stay-alert claude-code-hook on-notification"
+            "command": "jaynalerts claude-code-hook on-notification"
           }
         ]
       }
