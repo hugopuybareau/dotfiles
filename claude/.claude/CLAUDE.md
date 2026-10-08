@@ -1,5 +1,3 @@
-@RTK.md
-
 # agentmemory — recall at task start
 
 Persistent memory MCP available (`memory_smart_search`, `memory_recall`, `memory_save`).
