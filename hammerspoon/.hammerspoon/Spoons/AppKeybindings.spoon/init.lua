@@ -14,6 +14,7 @@ local ALERTER = "/opt/homebrew/bin/alerter"
 local VSCODE_BUNDLE = "com.microsoft.VSCode"
 local GHOSTTY_BUNDLE = "com.mitchellh.ghostty"
 local MAIL_BUNDLE = "com.apple.mail"
+local HERMES_BUNDLE = "com.nousresearch.hermes"
 
 -- Pair definitions
 local PAIRS = {}
@@ -150,6 +151,7 @@ function obj:init()
 		["t"] = { bundleID = GHOSTTY_BUNDLE },
 		["v"] = { bundleID = VSCODE_BUNDLE },
 		["m"] = { bundleID = MAIL_BUNDLE },
+		["h"] = { bundleID = HERMES_BUNDLE },
 		["à"] = { name = "CapCut" },
 	}
 
