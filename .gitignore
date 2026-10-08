@@ -25,3 +25,13 @@ opencode/.config/opencode/misc/coding-team/
 litellm/config.yaml          # real litellm config holds master_key (use config.yaml.example)
 **/*-sa.json                 # GCP service-account keys
 **/vertex-sa.json
+
+# --- Claude Code runtime state, caches & backups ---
+claude/.claude/plugins/plugin-directory-cache*.json
+claude/.claude/plugins/store/
+claude/.claude/plugins/synced/
+claude/.claude/state/
+claude/.claude/skills/.trash/
+claude/.claude/skills/synced/
+claude/.claude/settings.json.*
+claude/.claude/.caveman-ab
