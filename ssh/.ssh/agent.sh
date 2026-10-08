@@ -20,4 +20,8 @@ else
 fi
 
 # Ensure keys are added
-ssh-add -l &>/dev/null || ssh-add &>/dev/null
+# On macOS, prefer Keychain-backed loading: `ssh-add --apple-use-keychain <key>`
+# re-adds passphrase-protected keys without prompting (passphrase is stored in
+# the Keychain once you've run it manually). Plain `ssh-add` can't load a
+# passphrase-protected key non-interactively, which left the agent empty.
+ssh-add -l &>/dev/null || ssh-add --apple-use-keychain ~/.ssh/id_ed25519 &>/dev/null
