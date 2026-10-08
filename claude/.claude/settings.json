@@ -1,4 +1,5 @@
 {
+  "cleanupPeriodDays": 99999,
   "model": "opus",
   "hooks": {
     "Stop": [
@@ -32,24 +33,32 @@
         ]
       }
     ],
-    "PreToolUse": [
+    "UserPromptSubmit": [
       {
-        "matcher": "Bash",
         "hooks": [
           {
             "type": "command",
-            "command": "rtk hook claude"
+            "command": "'/Users/hugopuybareau/Library/Application Support/Jaynshare/bin/jaynshare' title-hook",
+            "timeout": 2
           }
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "'/Users/hugopuybareau/Library/Application Support/Jaynshare/bin/jaynshare' statusline",
+    "padding": 0,
+    "refreshInterval": 10
   },
   "enabledPlugins": {
     "clangd-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "context-mode@context-mode": true,
     "agentmemory@agentmemory": true,
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "posthog@claude-plugins-official": true,
+    "vercel@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {
@@ -66,12 +75,43 @@
     }
   },
   "effortLevel": "xhigh",
-  "theme": "dark",
-  "tui": "fullscreen",
+  "autoCompactWindow": 200000,
   "promptSuggestionEnabled": false,
+  "tui": "fullscreen",
+  "theme": "custom:jaynshare",
   "preferredNotifChannel": "notifications_disabled",
   "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
-  "cleanupPeriodDays": 99999,
-  "autoCompactWindow": 200000
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: assume private unless the remote host and repo name indicate otherwise, or a visibility check in the transcript shows public",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured",
+      "**Default / protected branches**: unknown — no git remotes configured and repo has 0 tracked files; origin/HEAD unset",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Source control**: The trusted repo (/Users/hugopuybareau/src) only — no remotes are configured, so no additional orgs or hosts apply",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar — note sibling project .env files (e.g. bissap/.env, crm/.env, jayn-lead-generator/.env, video-bs/.env) observed nearby are out of scope for this project and not adopted here",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`); note `db-prod` was seen in shell history and matches this pattern",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development",
+      "**Trusted repo**: The git repository at /Users/hugopuybareau/src (its working directory) — currently has no configured remote(s) and 0 tracked files, so no push/publish scoping can be inferred; treat as an empty/uninitialized local repo",
+      "**Org-specific CLIs**: None configured"
+    ]
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  }
 }

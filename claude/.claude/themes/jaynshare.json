@@ -1,0 +1,11 @@
+{
+  "name": "Jaynshare",
+  "base": "dark",
+  "overrides": {
+    "claude": "#f7c600",
+    "claudeShimmer": "#ffe680",
+    "promptBorder": "#f7c600",
+    "promptBorderShimmer": "#ffe680",
+    "rate_limit_fill": "#f7c600"
+  }
+}
