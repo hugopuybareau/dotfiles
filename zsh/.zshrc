@@ -35,3 +35,9 @@ if [[ -n ${ZSH_VERSION-} ]] && command -v jaynalerts >/dev/null 2>&1; then
 fi
 # jaynalerts end
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/hugopuybareau/.local/bin:$PATH"
+
+# Scaleway CLI autocomplete initialization.
+eval "$(scw autocomplete script shell=zsh)"
