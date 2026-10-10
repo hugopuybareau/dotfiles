@@ -200,6 +200,16 @@ else
   alias ll="ls -al"
 fi
 
+# md -> edit Markdown rendered in Typora (micro stays $EDITOR). MUST stay after
+# oh-my-zsh, which aliases md to `mkdir -p`. Creates the file if it doesn't exist.
+if [ -d /Applications/Typora.app ]; then
+  unalias md 2>/dev/null
+  function md() {
+    [ $# -gt 0 ] && touch "$@"
+    open -a Typora "$@"
+  }
+fi
+
 # _______ Anything else _______
 
 # >>> conda initialize >>>
