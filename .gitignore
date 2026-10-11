@@ -22,9 +22,15 @@ bin/
 opencode/.config/opencode/misc/coding-team/
 
 # --- Secrets (never commit) ---
-litellm/config.yaml          # real litellm config holds master_key (use config.yaml.example)
-**/*-sa.json                 # GCP service-account keys
+# gitignore has no trailing comments: a "# ..." after a pattern becomes part of it
+# real litellm config holds master_key (use config.yaml.example)
+litellm/config.yaml
+# GCP service-account keys
+**/*-sa.json
 **/vertex-sa.json
+# Claude Code login tokens
+claude/.claude/.credentials.json
+claude/.claude/.credentials.lock
 
 # --- Claude Code runtime state, caches & backups ---
 claude/.claude/plugins/plugin-directory-cache*.json
