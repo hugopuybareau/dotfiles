@@ -9,7 +9,7 @@ help:
 	@echo "  setup            Run xcode-clt, brew, stow, stay-alert, context-mode"
 	@echo "  xcode-clt        Install Xcode Command Line Tools (provides swiftc) if missing"
 	@echo "  brew             Symlink .Brewfile and run brew bundle --global"
-	@echo "  stow             Symlink dotfile packages via GNU stow (--restow for idempotency)"
+	@echo "  stow             Symlink dotfile packages via GNU stow (--restow for idempotency), hermes per-file"
 	@echo "  stay-alert       Clone (if missing) and install stay-alert (bun link + init)"
 	@echo "  context-mode     Install context-mode globally via npm (opencode plugin + claude hook)"
 	@echo "  agentmemory      Install agentmemory (npm), launchd autostart server, claude plugin"
@@ -27,6 +27,8 @@ brew:
 
 stow:
 	stow --restow $(STOW_PACKAGES)
+	# per-file links: Hermes finds skills via rglob, which skips symlinked dirs
+	stow --restow --no-folding hermes
 
 stay-alert:
 	@test -d $(STAY_ALERT_DIR) || git clone $(STAY_ALERT_REPO) $(STAY_ALERT_DIR)
@@ -77,7 +79,7 @@ litellm:
 
 verify-symlinks:
 	@echo "Verifying critical symlinks..."
-	@for f in $(HOME)/.claude $(HOME)/.config/opencode $(HOME)/.config/opencode/AGENTS.md $(HOME)/.Brewfile; do \
+	@for f in $(HOME)/.claude $(HOME)/.config/opencode $(HOME)/.config/opencode/AGENTS.md $(HOME)/.Brewfile $(HOME)/.hermes/config.yaml; do \
 		if [ -L "$$f" ]; then echo "  ok  $$f -> $$(readlink $$f)"; \
 		elif [ -e "$$f" ]; then echo "  WARN $$f exists but is NOT a symlink (run 'make stow' after removing real file)"; \
 		else echo "  MISS $$f missing"; fi; \

@@ -104,6 +104,9 @@ cask "hammerspoon"
 cask "basictex"
 # Gemini desktop app
 cask "gemini"
+# Hermes agent setup app: installs the `hermes` CLI and builds the desktop app
+# (com.nousresearch.hermes, ctrl+cmd+H in hammerspoon) into ~/.hermes
+cask "hermes-desktop"
 # Secure tunnels to localhost
 cask "ngrok"
 # Web browser with built-in ad blocker
