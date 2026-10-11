@@ -48,7 +48,6 @@ brew "eza"
 brew "micro"
 brew "neovim"
 brew "yazi"
-brew "zoxide"
 # Platform built on V8 to build network applications
 brew "node"
 # OCR a PDF and add a searchable text layer
@@ -117,8 +116,6 @@ cask "google-chrome"
 cask "karabiner-elements"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Markdown editor that edits the rendered page (tables, checkboxes), used by `md`
-cask "typora"
 # Run large language models locally (GUI companion to the CLI)
 cask "ollama"
 # Fast and secure web browser
