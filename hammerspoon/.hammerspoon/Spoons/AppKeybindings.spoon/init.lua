@@ -13,6 +13,7 @@ local ALERTER = "/opt/homebrew/bin/alerter"
 -- Bundle IDs
 local VSCODE_BUNDLE = "com.microsoft.VSCode"
 local GHOSTTY_BUNDLE = "com.mitchellh.ghostty"
+local CMUX_BUNDLE = "com.cmuxterm.app"
 local MAIL_BUNDLE = "com.apple.mail"
 local HERMES_BUNDLE = "com.nousresearch.hermes"
 
@@ -93,8 +94,8 @@ function obj:init()
 	self.appWatcher = hs.application.watcher.new(function(appName, event, app)
 		if event == hs.application.watcher.activated and app then
 			local bid = app:bundleID()
-			-- 1. Clear terminal-notifier alerts when Ghostty gets focus
-            if bid == GHOSTTY_BUNDLE then
+			-- 1. Clear terminal-notifier alerts when a terminal gets focus
+            if bid == GHOSTTY_BUNDLE or bid == CMUX_BUNDLE then
                 hs.task.new(ALERTER, nil, {"--remove", "stay-alert"}):start()
             end
 			-- 2. Handle pair tracking
@@ -148,7 +149,7 @@ function obj:init()
 		["d"] = { name = "Discord" },
 		["r"] = { name = "Strawberry" },
 		["c"] = { name = "Google Chrome" },
-		["t"] = { bundleID = GHOSTTY_BUNDLE },
+		["t"] = { bundleID = CMUX_BUNDLE },
 		["v"] = { bundleID = VSCODE_BUNDLE },
 		["m"] = { bundleID = MAIL_BUNDLE },
 		["h"] = { bundleID = HERMES_BUNDLE },

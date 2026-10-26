@@ -41,7 +41,7 @@ Single-app launcher shortcuts live in `hammerspoon/.hammerspoon/Spoons/AppKeybin
 
 1. Resolve the bundle ID: `osascript -e 'id of app "Name"'` (Hermes = `com.nousresearch.hermes`).
 2. Add a `*_BUNDLE` constant next to the others at the top of the file.
-3. Check the `singleHotkeys` table for a free key (avoid collisions), then add `["x"] = { bundleID = THE_BUNDLE }`. Current map: t=Ghostty, v=VSCode, m=Mail, c=Chrome, p=Finder, o=Obsidian, w=Whatsapp, s=Spotify, d=Discord, r=Strawberry, à=CapCut, h=Hermes.
+3. Check the `singleHotkeys` table for a free key (avoid collisions), then add `["x"] = { bundleID = THE_BUNDLE }`. Current map: t=cmux, v=VSCode, m=Mail, c=Chrome, p=Finder, o=Obsidian, w=Whatsapp, s=Spotify, d=Discord, r=Strawberry, à=CapCut, h=Hermes.
 4. Syntax-check: `luajit -b <file> /dev/null`.
 5. Restart Hammerspoon to reload config: `killall Hammerspoon && sleep 1 && open -a Hammerspoon`.
 6. Verify end-to-end with a synthetic keypress — see references/macos-hotkey-verification.md.
