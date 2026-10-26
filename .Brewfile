@@ -98,6 +98,8 @@ brew "wget"
 cask "docker-desktop"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+cask "cmux"
 # Tailscale client for secure remote access (renamed from `tailscale`)
 cask "tailscale-app"
 # Desktop automation application
