@@ -79,13 +79,23 @@ function obj:init()
         local win = hs.window.focusedWindow()
         if not win then return end
 
-        -- Reduce window size first to handle cases where it's "stuck" being too large
-        win:setSize({w = 100, h = 100})
-
-        -- Then set it to fullscreen
         local screen = win:screen():frame()
         win:setFrame(screen)
     end)
+
+    -- Snap window to the left / right half of the screen (AZERTY: ")" and "-" are side by side)
+    local function snapToHalf(side)
+        local win = hs.window.focusedWindow()
+        if not win then return end
+
+        local frame = win:screen():frame()
+        frame.w = frame.w / 2
+        if side == "right" then frame.x = frame.x + frame.w end
+        win:setFrame(frame)
+    end
+
+    hs.hotkey.bind({"ctrl", "cmd"}, ")", function() snapToHalf("left") end)
+    hs.hotkey.bind({"ctrl", "cmd"}, "-", function() snapToHalf("right") end)
 
     -- B. Sauvegarde Automatique quand l'utilisateur touche une fenêtre
     -- Cela permet de mémoriser où tu mets tes fenêtres sans faire Cmd+Ctrl+M
