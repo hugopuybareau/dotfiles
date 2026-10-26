@@ -11,9 +11,6 @@ sessions/
 session-env/
 projects/
 tasks/
-context-mode/sessions/
-context-mode/sessions.db*
-context-mode/content/
 shell-snapshots/
 file-history/
 paste-cache/

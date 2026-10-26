@@ -21,16 +21,6 @@
         "gitCommitSha": "c40770ae5a1d6855fce096c5b747e709ec946b2b"
       }
     ],
-    "context-mode@context-mode": [
-      {
-        "scope": "user",
-        "installPath": "/Users/hugopuybareau/dotfiles/claude/.claude/plugins/cache/context-mode/context-mode/1.0.151",
-        "version": "1.0.151",
-        "installedAt": "2026-05-30T14:04:37.576Z",
-        "lastUpdated": "2026-10-07T17:21:09.563Z",
-        "gitCommitSha": "824f0427bf67a5c121fb1bec00696ca9ab9058a6"
-      }
-    ],
     "agentmemory@agentmemory": [
       {
         "scope": "user",
@@ -44,11 +34,11 @@
     "frontend-design@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/hugopuybareau/.claude/plugins/cache/claude-plugins-official/frontend-design/315c4e48967d",
-        "version": "315c4e48967d",
+        "installPath": "/Users/hugopuybareau/.claude/plugins/cache/claude-plugins-official/frontend-design/58267944f921",
+        "version": "58267944f921",
         "installedAt": "2026-05-31T12:53:37.141Z",
-        "lastUpdated": "2026-10-08T19:27:53.089Z",
-        "gitCommitSha": "315c4e48967d9541c29c3c656441dded353ca7aa"
+        "lastUpdated": "2026-10-24T17:12:40.434Z",
+        "gitCommitSha": "58267944f92187b7d6a1c822165c96c81c864806"
       }
     ],
     "lua-lsp@claude-plugins-official": [
@@ -63,11 +53,11 @@
     "posthog@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/hugopuybareau/.claude/plugins/cache/claude-plugins-official/posthog/1.1.64",
-        "version": "1.1.64",
+        "installPath": "/Users/hugopuybareau/.claude/plugins/cache/claude-plugins-official/posthog/1.1.67",
+        "version": "1.1.67",
         "installedAt": "2026-09-13T16:49:53.672Z",
-        "lastUpdated": "2026-09-23T15:45:10.206Z",
-        "gitCommitSha": "469d1773e9cb55cb2d0cffd0a91e12bbeff8d32e"
+        "lastUpdated": "2026-10-10T15:58:50.667Z",
+        "gitCommitSha": "e0fbf5e742fb4242c4ea509b395b2e343642f0b7"
       }
     ],
     "vercel@claude-plugins-official": [

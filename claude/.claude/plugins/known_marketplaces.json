@@ -5,15 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-10-08T19:28:09.772Z"
-  },
-  "context-mode": {
-    "source": {
-      "source": "github",
-      "repo": "mksglu/context-mode"
-    },
-    "installLocation": "/Users/hugopuybareau/.claude/plugins/marketplaces/context-mode",
-    "lastUpdated": "2026-05-30T14:04:20.925Z"
+    "lastUpdated": "2026-10-25T07:50:40.937Z"
   },
   "agentmemory": {
     "source": {
